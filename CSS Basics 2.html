@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Level 2</title>
+    <link rel="stylesheet" href="Style 2.css">
+</head>
+<body>
+    <!-- 
+    Box Model in CSS:
+    * Height :- Height or vertical space occupied by the box, link or content or in the website.
+        Suppose we want to set the height of a div tag to 10(960pxs) inches then we have to use heigth model.
+    * Width :- Width or horizontal space occupied by the box, link or content or in the website.
+    * Border :- The line of division between padding and margin is Border.
+        For applying border, we use border properties like "border-width: 2px", "border-style:solid/dotted/dashed
+        /double" & "border-color:e.g. blue".
+        Note:- We can also apply "text-align" property for a particular box of given width or with default width.
+        Border Shorthand property:- In border property we can set the border width, style & color simultaneously.
+        E.g.- border: 2px dotted black;
+
+        Border-radius :- It is used to round the corners of an element outer border edge.
+
+    * Padding :- The extra space occupied by the content is Padding.
+        Suppose we want to add some extra space outside content border and also want that the space is aligned to
+        a specific side or direction then we use "padding-left", "padding-right", "padding-top" & "padding-bottom"
+        properties of padding like padding-left = 25px;.
+        Shorthand in padding :- e.g. - padding: 1px 2px 3px 4px
+                                                top|right|bottom|left -> Clockwise
+    * Margin :- The space between two content is Margin.
+        As div tag is a block element so it has a default margin length in its right direction.
+        Shorthand in Margin :- e.g. - margin: 25px 30px 35px 40px
+                                              top|right|bottom|left-> Clockwise
+    -->
+    <!-- <div>Div 1</div>
+    <br>
+    <div>Div 2</div> -->
+    
+    <!-- 
+        Professional programmers always set universal padding and margin to 0.
+    Suppose we are creating a website, and after not setting the universal padding and
+    margin to 0 we can face many complex problem while setting the padding & margin of
+    tags like buttons, headings, paragraphs & div tags etc.
+    So, for not facing many problems in future while building our website mostly
+    professional programmers sets the universal padding & margin to 0.-->
+    <!-- <div id="navbar">
+        <a id="logo" href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=678802104188&hvpos=&hvnetw=g&hvrand=6253974679458216947&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9050497&hvtargid=kwd-10573980&hydadcr=14453_2371562&gad_source=1">amazon.in</a>
+        <a href="#">Account</a>
+        <a href="#">My Cart</a>
+        <a href="#">Contact us</a>
+        <input type="text" placeholder="Search Amazon.in">
+        <button>Search</button>
+    </div> -->
+
+
+    <!-- 
+        Display Property in CSS:-
+        * Inline - Takes only the space required by the element.
+        E.g.
+        div {
+            dispaly: inline
+        }
+        As we know that, div tag is a block element but using display property in CSS
+        we can convert a block element into an inline element.
+        * Block - Takes full space available in width.
+        In block element like div;
+        if we set the padding & margin to some pixels the it only be applied on left and
+        right side of the box and cannot be set on top and bottom of the block element.
+        For this, we have a special display property in CSS:-
+        * Inline-block - Similar to inline but we can set margin & padding.
+        * None - To remove element from document flow.
+        When we set the display to none then the removed element's space cannot be reserved
+        it means other element can occupy its space.
+
+        Visibility property in CSS:-
+        e.g. - {
+            visibility: hidden
+        }
+        In this property the mentioned element will be removed but it's space will be reserved
+        and cannot be taken by any other element.
+        
+        Alpha Channel :- 
+        Opacity(0-1) it can be 0.25, 0.75 or whatever between 0 & 1.
+    -->
+    <!-- <div id="display-playground">Box 1</div> -->
+
+    <header>
+        <div id="navbar">
+            <a id="logo" href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=678802104188&hvpos=&hvnetw=g&hvrand=6253974679458216947&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9050497&hvtargid=kwd-10573980&hydadcr=14453_2371562&gad_source=1">amazon.in</a>
+            <a href="#">Account</a>
+            <a href="#">My Cart</a>
+            <a href="#">Contact us</a>
+            <input type="text" placeholder="Search Amazon.in">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <div id="content">
+        <div class="contentBox" style="background-color: rgba(255,0,0,0.5);"></div>
+        <div class="contentBox" style="background-color: rgba(0,255,0,0.5);"></div>
+        <div class="contentBox" style="background-color: rgba(0,0,255,0.5);"></div>
+    </div>
+    <footer>
+        Made with &hearts; by Amazon <br>
+        &#169; 1996-2023, Amazon.com, Inc. or its affiliates
+    </footer>
+</body>
+</html>

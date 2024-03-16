@@ -1,0 +1,84 @@
+/* Percentage:-
+*/
+
+/* #Box-1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+#Box-2 {
+    height: 50px;
+    width: 30%;
+    background-color: red;
+    margin-left: 10%;
+} 
+
+/* Example Of Em Unit where em means itself */
+/* 
+#Box-1 {
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    font-size: 10px;
+}
+
+#Box-2 {
+    height: 50px;
+    width: 30%;
+    background-color: red;
+    margin-left: 10%;
+    font-size: 2em; Here the itseif condition in taken from its parent in hierarchy.
+    width: 5em; Here the itself condition in taken from "Box-2" font-size itself. 
+                Which means for font-size in "Box-2" the itself condition is taken from parent
+                element "Box-1".
+                And for "width: 5em;" in "Box-2" the itself condition is taken from width
+                of "Box-2*" itself.
+}
+*/
+
+/* #Box-1 {
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    font-size: 10px;
+} */
+
+/* #Box-2 {
+    height: 50px;
+    width: 30%;
+    background-color: red;
+    margin-left: 10%;
+    font-size: 2em; 
+    width: 5rem;
+} */
+/* Example of position property in CSS:- */
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#Box-1 {
+    position: static;
+}
+
+#Box-2 {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+#Box-3 {
+    position: sticky;
+    top: 0px;
+    left: 20px;
+}
+
+#Box-4 {    
+    position: fixed;
+    top: 0px;
+}

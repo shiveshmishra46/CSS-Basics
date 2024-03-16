@@ -1,0 +1,70 @@
+/* 
+  for Div 1 & Div 2:- 
+   div {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding : 1px 2px 3px 4px;
+    margin : 25px 30px 35px 40px;
+} */
+
+/* Professional programmers always set universal padding and margin to 0.
+Suppose we are creating a website, and after not setting the universal padding and
+margin to 0 we can face many complex problem while setting the padding & margin of
+tags like buttons, headings, paragraphs & div tags etc.
+So, for not facing many problems in future while building our website mostly
+professional programmers sets the universal padding & margin to 0 */
+* {
+    padding: 0;
+    margin: 0;
+}
+#navbar {
+    height: 60px;
+    background-color: #0f1111;
+}
+
+button {
+    background-color: #f08804;
+}
+
+#logo {
+    font-size: 25px;
+    color: #f08804;
+}
+
+a {
+    color:white;
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+/* #display-playground {
+    height: 100px;
+    width: 100px;
+    padding: 25px;
+    margin: 25px;
+    display: inline-block;
+    background-color: rgba(255,0,0,0.5);
+                           red|green|blue|alpha-channel 
+}*/
+
+#content {
+    height: 800px;
+    width: 800px;
+}
+
+.contentBox {
+    height: 100px;
+    width: 100px;
+    border: 2px dashed black;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+h1 {
+    color :Black;
+}
+
+p {
+    color :purple;
+
+}
+
+button {
+    color : Blue;
+    background-color: green;
+}
+
+/* Used to set background color. */
+body {
+    background-color : #03b1fc;
+
+}
+
+/* body { 
+    color : #03b1fc
+} */

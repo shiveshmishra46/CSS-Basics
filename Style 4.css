@@ -1,0 +1,63 @@
+/* body {
+    text-align: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#box1 {
+    background-color: #FF0000;
+}
+
+#box2 {
+    background-color: #00FF00;
+}
+
+#box3 {
+    background-color: #0000FF;
+}
+
+#box4 {
+    background-color: #FFFF00;
+}
+
+#box5 {
+    background-color: #00FFFF;
+}*/
+
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+/* @media (width: 601px) {
+    div { 
+        background-color: lightblue;
+    }
+} */
+
+/* 
+We can also use the min-width and max-width properties to apply styles to a range of screen sizes.
+It is important to note that the min-width and max-width properties are inclusive.
+For example, the following media query will apply to screen sizes between 600px and 800px, inclusive:
+It means that we can write the media queries property in combined form also
+@media (min-width:600px) and (max-width: 800px) {
+    div {
+        background-color: lightgreen;
+    }
+} */
+

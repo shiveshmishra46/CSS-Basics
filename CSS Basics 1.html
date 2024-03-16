@@ -1,0 +1,150 @@
+<!-- CSS :- It is a language that is used to describe the style of a document.
+Basic Syntax :- h1{color: red;} 
+In the above basic syntax if CSS the "color" is a property and the "red" is a value, together known as property-value pair.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Level 1</title>
+    <!-- This link tag is written below is used for linking the HTML file with the CSS file
+    If we didn't link the CSS file with HTML file all the styling which we set for the HTML File wouldn't be applied and also wouldn't appeared. -->
+    <link rel="stylesheet" href="Style 1.css">
+</head>
+<!-- Background Color Property: It is used to set the background color property. -->
+<body>
+    <!-- Including Style :- 
+    * Inline Styling:- 
+        <h1 style="color:red"> Shivesh Mishra </h1> 
+        Example:- <h1 style="color:red">Hello from Shivesh Mishra!</h1>-->
+
+    <!--* <style> Tag:-
+        <style> 
+                h1 { 
+                    color:red;
+                }
+        </style>
+    This tag and the property is written in the "head tag" of the HTML file and suppose if we apply the
+    style on h1 tag of the HTML file then it would be applied on all the h1 tags including in the HTML file.-->
+    
+    <!-- *External Stylesheet:- (Professional full stack developer mostly prefer this styling.)
+        
+        By creating another stylesheet file for styling the created HTML file. And using the following syntax we can all do this:-
+    Syntax:-
+
+    h1 {
+    color : green;
+    }
+    
+    After that we link our HTML page with the created stylesheet file of CSS by using the following link tag.
+    <link rel="stylesheet" href="style.css">
+    We will always use external stylesheet for styling our HTML file and never have to use any "inline" styling in the same HTML file until and unless
+    extreme emergency arrived beacause if we use "inline" styling in the same HTML file then the first priority is given to the "inline" style.
+    So the professional and very good way is to always use the "External" styling file. -->
+
+
+    <!-- 
+        Foreground Color Property:- 
+        Used to set the color of foreground elements.
+    Examples of foreground elements: Text, button, link etc. -->
+
+    
+    <h1>Hello from Shivesh Mishra!</h1>
+    <p>This is a simple and normal paragraph.</p>
+    <button>Click Me!</button>
+
+    <!-- 
+        Colors:- 
+        For some standard and basic colors in HTML we can simply write a name
+    of that color to apply them on the desired tag.
+    Color Systems:
+    RGB System:- Suppose if we want to apply any other color of spectrum which has no specific name
+    For this we have to mix the primary and basic colors and type their required
+    quantities between 0(min)-255(max) to get the expected color output.
+    
+    We're get into trouble after getting to know that ww have to learn all the parameters  
+    for all the colors of spectrum but we're actually wrong because it is so-so easy,it
+    means we just have to search for "color picker" on google and that's it.
+    Means, we will get a whole package of colors with their respective parametrs
+    we only have to do, to just slide the slider to get the values of "rgb" colors.
+
+    HEX(Hexadecimal) System:- 
+        Hexadecimal system is a system which includes numbers from 0-9 and some alphabets from 
+    a-f and hence by combining these two we get alphanumeric values of six(6) digits including 
+    the hash(#) symbol in starting like, #ff0000, #00ff00, #0000ff.
+    In the above examples in alphanumeric tags the first two digits shows the quantity of red
+    color, middle digits shows the green color and last two-digits shows the quantity pf blue
+    color.
+    WE don't have to remember the HEX(#) code of any color we can just go to google to search for
+    many color palette websites and for knowing the best color combinations for our website or any
+    projects.
+    Websites like coolers.com
+    -->
+
+    <hr>
+
+    <!-- 
+        Selectors in CSS 
+    1. Universal Selector *{ ;} - If we use universal selector then all the properties will be applied on
+    whole website.
+    2. Element Selector "element name"such as h1 or body etc.{;} - In this, we just write the element name 
+    on which we want to apply the properties. Another advantage of element selector in CSS is if inside 
+    universal selector we set any element property, then the property is applied on the selected element only.
+    3. Id selector( #myid{ ;} ) :- Suppose we want to apply some changes in property of any block of elements then
+    we use "id selector" there but it is used only for block elements not for individual or not everytime or 
+    every line. It is the habit ofbad programmer 
+    4. Class selector - ( .classname { ;} ) :- It is used to apply some change in a particular line.
+    In both "Id selector and Class selector" both the properties are used after creating a unique id and class names
+    in HTML file.(i.e. id='101', class='myclass')
+    
+
+    Text Properties:-
+    Text-Align - 
+    Used to align some bunch of text in the center, right & left in your website.
+    It works in hierarchial format, suppose you want to only a part of paragraph in any of the "div"
+    tag in your website then you can also do that wiht thed help of text align tag.
+
+    Text-Decoration- 
+    Search mdn website n google on which the use of every tag in CSS is available
+    in the documentation. Usually used to underline, overline, line-through(cross cutting over the text.)
+    
+    Font-Weight - 
+    It is used to set font weight to lighter, bold, normal
+    It also varies in the range between (100 to 900) where 100 is the lightest and 900 is boldest.
+    
+    Font-Family - 
+    It is used to add font style to the text.
+    The available browsers on the internet can only supports some fonts like "arial" etc. But some browsers doesn't
+    support some fonts which we used while making our website.
+    Then, the solution is we use many font styles while styling our webpage by applying commas like e.g.-
+    arial, sans serif etc. If arial is not supported by current web browser then sans serif is applied from
+    your stylesteet the application order of fonts is left to right which varies from browser to browser
+    And, it is called Fall Back Mechanism.
+    There are two types of font styles in CSS font-family:-
+    1. Generic Font Families & 2. Specific Font Families.
+    For more detail on this, we may search on goole.😊
+    
+
+    Units In Css:-  
+    It is used to set the size of the text. There are two types of units in CSS
+    1. Absolute Units & 2. Relative Units
+    Absolute Units:-
+    The abolute units are true universally and cannot be different anywhere, it means it
+    have same value and doesn't varies from place to place. 
+    We can measure in cm, inches etc. in CSS but professionally and mostly we will use
+    "pixels"...
+    96 pixels = 1 inch and 1 inch = 2.54cm (approx.)
+    Relative Uits:- We have discussed it in level 3.
+    
+    Line-height:- 
+    It is used to set the height or space between the lines of a paragraph.
+    For normal spacing we can set the line-height to normal.
+
+    Text-transform:- 
+    Used to set the case of the paragraph or a text to uppercase(all capital),
+    lowercase(all small), capitalize(only first letter of the every text will be capital) & none (for not setting).
+    -->
+
+
+</body>
+</html>
